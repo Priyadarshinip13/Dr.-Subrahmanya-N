@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       // In a real application, this would integrate with a booking system
       alert(
-        "Booking system will be integrated here. For now, please call +91 98765 43210 to book your consultation.",
+        "Booking system will be integrated soon. For now, please call +91 8722727275 to book your consultation.",
       );
     });
   });
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   callButtons.forEach((button) => {
     if (button.textContent.includes("Call")) {
       button.addEventListener("click", function () {
-        window.location.href = "tel:+919876543210";
+        window.location.href = "tel:+918722727275";
       });
     }
   });
