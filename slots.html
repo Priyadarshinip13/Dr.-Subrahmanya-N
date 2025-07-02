@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment - Dr. Subrahmanya M N</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <div class="logo-icon">
+              <div class="leaf-icon">🌿</div>
+            </div>
+            <span class="logo-text">AyurCare</span>
+          </div>
+          <nav class="nav desktop-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="slots.html" class="nav-link active">Book Appointment</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+          <button class="btn btn-outline desktop-btn">Patient Portal</button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+          <a href="index.html" class="mobile-nav-link">Home</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="slots.html" class="mobile-nav-link">Book Appointment</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+          <button class="btn btn-outline mobile-portal-btn">
+            Patient Portal
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="header-content">
+          <h1 class="page-title">Book Your Consultation</h1>
+          <p class="page-description">
+            Choose your preferred date and time for Ayurvedic consultation with
+            Dr. Subrahmanya M N
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+      <div class="container">
+        <div class="booking-grid">
+          <!-- Calendar & Slots -->
+          <div class="slots-container">
+            <div class="calendar-header">
+              <h2 class="section-title">Select Date & Time</h2>
+              <div class="calendar-nav">
+                <button class="calendar-btn" id="prevWeek">‹</button>
+                <span class="current-week" id="currentWeek">This Week</span>
+                <button class="calendar-btn" id="nextWeek">›</button>
+              </div>
+            </div>
+
+            <!-- Date Picker -->
+            <div class="date-picker" id="datePicker">
+              <!-- Dates will be populated by JavaScript -->
+            </div>
+
+            <!-- Time Slots -->
+            <div class="time-slots" id="timeSlots">
+              <div class="slot-section">
+                <h3 class="slot-title">
+                  <span class="slot-icon">🌅</span>
+                  Morning (10:00 AM - 12:00 PM)
+                </h3>
+                <div class="slots-grid" id="morningSlots">
+                  <!-- Morning slots will be populated by JavaScript -->
+                </div>
+              </div>
+
+              <div class="slot-section">
+                <h3 class="slot-title">
+                  <span class="slot-icon">☀️</span>
+                  Afternoon (2:00 PM - 5:00 PM)
+                </h3>
+                <div class="slots-grid" id="afternoonSlots">
+                  <!-- Afternoon slots will be populated by JavaScript -->
+                </div>
+              </div>
+
+              <div class="slot-section">
+                <h3 class="slot-title">
+                  <span class="slot-icon">🌙</span>
+                  Evening (6:00 PM - 8:00 PM)
+                </h3>
+                <div class="slots-grid" id="eveningSlots">
+                  <!-- Evening slots will be populated by JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Booking Form -->
+          <div class="booking-form-container">
+            <div class="form-card">
+              <h2 class="form-title">Booking Details</h2>
+              <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                  <label for="patientName" class="form-label"
+                    >Full Name *</label
+                  >
+                  <input
+                    type="text"
+                    id="patientName"
+                    name="patientName"
+                    class="form-input"
+                    required
+                    placeholder="Enter your full name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                    required
+                    placeholder="+91 98765 43210"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="your.email@example.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="age" class="form-label">Age</label>
+                  <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    class="form-input"
+                    placeholder="25"
+                    min="1"
+                    max="120"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="reason" class="form-label">
+                    Reason for Consultation *
+                  </label>
+                  <select
+                    id="reason"
+                    name="reason"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">Select consultation type</option>
+                    <option value="general">General Consultation</option>
+                    <option value="panchakarma">Panchakarma Therapy</option>
+                    <option value="digestive">Digestive Issues</option>
+                    <option value="stress">Stress & Anxiety</option>
+                    <option value="joint">Joint Pain & Arthritis</option>
+                    <option value="skin">Skin Conditions</option>
+                    <option value="weight">Weight Management</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="symptoms" class="form-label">
+                    Symptoms/Details
+                  </label>
+                  <textarea
+                    id="symptoms"
+                    name="symptoms"
+                    class="form-textarea"
+                    rows="3"
+                    placeholder="Please describe your symptoms or concerns..."
+                  ></textarea>
+                </div>
+
+                <div class="selected-slot" id="selectedSlotInfo">
+                  <div class="slot-info">
+                    <span class="slot-label">Selected Slot:</span>
+                    <span class="slot-details" id="slotDetails">
+                      Please select a date and time
+                    </span>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                  📅 Confirm Booking
+                </button>
+
+                <p class="form-note">
+                  * Required fields. You will receive a confirmation call within
+                  1 hour.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmationModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">🎉 Booking Confirmed!</h2>
+          <button class="modal-close" id="modalClose">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="confirmation-details" id="confirmationDetails">
+            <!-- Booking details will be populated here -->
+          </div>
+          <div class="confirmation-actions">
+            <button class="btn btn-primary" id="addToCalendar">
+              📅 Add to Calendar
+            </button>
+            <button class="btn btn-secondary" id="shareWhatsApp">
+              📱 Share on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <div class="leaf-icon">🌿</div>
+              </div>
+              <span class="logo-text">AyurCare</span>
+            </div>
+            <p class="footer-description">
+              Authentic Ayurvedic healing with compassion, wisdom, and natural
+              wellness solutions.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">Contact Info</h3>
+            <p class="footer-item">📍 Ayur Wellness Center, Bangalore</p>
+            <p class="footer-item">📞 +91 98765 43210</p>
+            <p class="footer-item">✉️ dr.subrahmanya@ayurcare.com</p>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">Quick Links</h3>
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="slots.html" class="footer-link">Book Appointment</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Patient Portal</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 AyurCare. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+  </body>
+</html>

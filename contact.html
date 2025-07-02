@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Dr. Subrahmanya M N</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <div class="logo-icon">
+              <div class="leaf-icon">🌿</div>
+            </div>
+            <span class="logo-text">AyurCare</span>
+          </div>
+          <nav class="nav desktop-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="slots.html" class="nav-link">Book Appointment</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </nav>
+          <button class="btn btn-outline desktop-btn">Patient Portal</button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+          <a href="index.html" class="mobile-nav-link">Home</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="slots.html" class="mobile-nav-link">Book Appointment</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+          <button class="btn btn-outline mobile-portal-btn">
+            Patient Portal
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="header-content">
+          <h1 class="page-title">Get in Touch</h1>
+          <p class="page-description">
+            Contact us for appointments, consultations, or any questions about
+            Ayurvedic treatments
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2 class="contact-title">Contact Information</h2>
+            <p class="contact-subtitle">
+              Reach out to us through any of the following methods
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <div class="contact-details">
+                  <h3>Clinic Address</h3>
+                  <p>
+                    Ayur Wellness Center<br />
+                    123 MG Road, Koramangala<br />
+                    Bangalore, Karnataka 560034
+                  </p>
+                  <a
+                    href="https://maps.google.com/directions"
+                    class="contact-link"
+                    target="_blank"
+                  >
+                    Get Directions →
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <div class="contact-details">
+                  <h3>Phone Number</h3>
+                  <p>
+                    +91 98765 43210<br />
+                    Available: 9:00 AM - 8:00 PM
+                  </p>
+                  <a href="tel:+919876543210" class="contact-link">
+                    Call Now →
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-details">
+                  <h3>Email Address</h3>
+                  <p>
+                    dr.subrahmanya@ayurcare.com<br />
+                    Response within 24 hours
+                  </p>
+                  <a
+                    href="mailto:dr.subrahmanya@ayurcare.com"
+                    class="contact-link"
+                  >
+                    Send Email →
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <div class="contact-details">
+                  <h3>WhatsApp</h3>
+                  <p>
+                    Quick consultation & booking<br />
+                    Available 24/7
+                  </p>
+                  <a
+                    href="https://wa.me/919876543210?text=Hello%20Dr.%20Subrahmanya,%20I%20would%20like%20to%20book%20an%20appointment"
+                    class="contact-link"
+                    target="_blank"
+                  >
+                    Message Now →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="quick-actions">
+              <h3>Quick Actions</h3>
+              <div class="action-buttons">
+                <a href="tel:+919876543210" class="btn btn-primary action-btn">
+                  📞 Call Now
+                </a>
+                <a
+                  href="https://wa.me/919876543210?text=Hello%20Dr.%20Subrahmanya,%20I%20would%20like%20to%20book%20an%20appointment"
+                  class="btn btn-secondary action-btn"
+                  target="_blank"
+                >
+                  💬 WhatsApp
+                </a>
+                <a href="slots.html" class="btn btn-outline action-btn">
+                  📅 Book Online
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <div class="form-card">
+              <h2 class="form-title">Send us a Message</h2>
+              <p class="form-subtitle">
+                Fill out the form below and we'll get back to you shortly
+              </p>
+
+              <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="firstName" class="form-label">
+                      First Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      class="form-input"
+                      required
+                      placeholder="John"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName" class="form-label">Last Name *</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      class="form-input"
+                      required
+                      placeholder="Doe"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactEmail" class="form-label">
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      id="contactEmail"
+                      name="contactEmail"
+                      class="form-input"
+                      required
+                      placeholder="john.doe@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contactPhone" class="form-label">
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      id="contactPhone"
+                      name="contactPhone"
+                      class="form-input"
+                      required
+                      placeholder="+91 98765 43210"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject *</label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="appointment">Appointment Booking</option>
+                    <option value="consultation">Treatment Consultation</option>
+                    <option value="panchakarma">Panchakarma Inquiry</option>
+                    <option value="followup">Follow-up Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-textarea"
+                    rows="5"
+                    required
+                    placeholder="Please share your questions, concerns, or any specific requirements..."
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      id="consent"
+                      name="consent"
+                      required
+                    />
+                    <span class="checkmark"></span>
+                    I consent to the collection and processing of my personal
+                    data for the purpose of responding to my inquiry.
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                  📤 Send Message
+                </button>
+
+                <p class="form-note">
+                  * Required fields. We'll respond within 24 hours.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <h2 class="section-title">Find Our Clinic</h2>
+        <p class="section-description">
+          Located in the heart of Bangalore for easy accessibility
+        </p>
+        <div class="map-container">
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9267837923544!2d77.6165103!3d12.9172842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0x12f84b5b29b9b789!2sKoramangala%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+              width="100%"
+              height="400"
+              style="border: 0; border-radius: 12px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="map-info">
+            <div class="info-card">
+              <h3>Clinic Hours</h3>
+              <div class="hours-list">
+                <div class="hour-item">
+                  <span>Monday - Friday</span>
+                  <span>10:00 AM - 8:00 PM</span>
+                </div>
+                <div class="hour-item">
+                  <span>Saturday</span>
+                  <span>10:00 AM - 6:00 PM</span>
+                </div>
+                <div class="hour-item">
+                  <span>Sunday</span>
+                  <span>10:00 AM - 2:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">✅ Message Sent!</h2>
+          <button class="modal-close" id="successModalClose">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Thank you for contacting us! We've received your message and will
+            get back to you within 24 hours.
+          </p>
+          <div class="confirmation-actions">
+            <button class="btn btn-primary" id="closeSuccessModal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <div class="leaf-icon">🌿</div>
+              </div>
+              <span class="logo-text">AyurCare</span>
+            </div>
+            <p class="footer-description">
+              Authentic Ayurvedic healing with compassion, wisdom, and natural
+              wellness solutions.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">Contact Info</h3>
+            <p class="footer-item">📍 Ayur Wellness Center, Bangalore</p>
+            <p class="footer-item">📞 +91 98765 43210</p>
+            <p class="footer-item">✉️ dr.subrahmanya@ayurcare.com</p>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">Quick Links</h3>
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="slots.html" class="footer-link">Book Appointment</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Patient Portal</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 AyurCare. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
